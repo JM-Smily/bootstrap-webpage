@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@keyframes navFlash {
+    0%{transform:translateY(1px);transform-origin: top;color:white;}
+    30%{transform:translateY(10px);transform-origin: bottom; color: #323232;}
+    100%{transform:translateY(-10px);transform-origin: bottom; color: #323232;}
+}
+body{
+    width: 100%;
+}
+.margin{
+    margin-bottom: 0;
+}
+body:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+/*--------------header--------------------------------------------------*/
+.style{
+    position: absolute;
+    top: 45%;
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.5em;
+    background-color: grey;
+}
+.type{
+    left: 10%;
+}
+.carousel-indicators li {
+    border-radius: 0;
+    border-color: grey;
+}
+.carousel-indicators .active{
+    background-color: transparent;
+    border-color: white;
+}
+.carousel-caption{
+    width: 20%;
+    height: 35%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    text-align: center;
+    transform: scale(0,0);
+    transition: all .5s linear;
+}
+.carousel-caption h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 3em;
+    padding-top:10px ;
+    border-top: 3px solid white;
+}
+.carousel-caption h3{
+    font-size: 1.8em;
+    padding-bottom: 10px;
+    border-bottom: 3px solid white;
+}
+/*--------------section--------------------------------------------------*/
+/*---------jumbotron------*/
+.content h2{
+    margin-bottom:50px;
+    font-size: 3em;
+    color: grey;
+    font-weight: 600;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+.content p{
+    margin:20px auto;
+    font-size: 1.5em;
+    color: red;
+    font-weight: 500;
+    text-align: center;
+}
+.video{
+    width: 100%;
+    height: 260px;
+    background-color:palegoldenrod;
+}
+/*--------nav---------*/
+.nav{   
+    background-color:#fb4b4b;
+    border-bottom: 1px solid green;
+}
+#navul li a:hover{   
+    animation: navFlash .3s ease;
+    color: #323232;
+}
+#navul{
+    width: 80%;
+    padding: 20px;
+}
+#navul li{
+    width: 14%;
+    text-align: center;
+}
+#navul li a{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+}
+/*--------imgbx1------------*/
+.container{
+    position: relative;
+}
+#imgbox1{
+    position: relative;
+    left:-1800px;
+    transition: all .5s linear;
+}
+.font{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+}
+.pic{
+    position: absolute;
+    top:8px;
+    z-index: 2;
+    max-width: 93%;
+    height: 95%;
+    opacity: 1;
+}
+.mask{
+    position: absolute;
+    top:8px;
+    z-index:2;
+    max-width: 93%;
+    max-height: 95%;
+    background-color: #343434;
+    border-radius: 10px;
+    transform: scale(.1,.1) rotate(-240deg);
+    opacity: 0;
+}
+.mask h2{
+    width: 80%;
+    margin:40px auto 0;
+    padding-bottom: 10px;
+    color: green;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid red;
+}
+.mask p{
+    width: 80%;
+    height: 220px;
+    margin: 20px auto;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+.bg:hover .img-responsive{
+    transform: scale(.5,.5);
+    transition:all .3s linear;
+    opacity: 0;
+}
+.bg:hover .mask{
+    opacity:1;
+    transform: scale(1,1) rotate(0deg);
+    transition:all .3s linear;
+}
+/*---------imgbox2-----------*/
+.picbox2{
+    padding:20px 5%;
+    background-color: #1f2a36;
+}
+#imgbox2{
+    transform: scale(0,0);
+    transition: all .5s linear;
+}
+.imgbox{
+    position: relative;
+}
+.pic2{
+    margin-bottom: 40px;
+}
+.price1{
+    position: absolute;
+    bottom:-20px;
+    height:29%;
+    width: 100%;
+    background-color: rgba(0,0,0,.4);
+    opacity: 0;
+}
+.price{
+    position: absolute;
+    bottom:0;
+    height:25%;
+    width: 100%;
+    background-color: rgba(0,0,0,.4);
+    opacity: 0;
+}
+.imgbox:hover .price,.imgbox:hover .price1{
+    opacity: 1;
+}
+/*-----------------------backgroud--------------*/
+.backgroud{
+    max-width: 100%;
+    height:auto;
+    background-image: url("images/banner1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.back{
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+    background-color: orangered;
+    border-radius: 130px;
+}
+.icon{
+    margin: 10% auto;
+}
+.media{
+    padding-top: 3%;
+    padding-left: 10px;
+    position: relative;
+    left:1800px;
+    transition: all 1s linear;
+}
+.media-body{
+    color: white;
+}
+.butt {
+    text-align: center;
+    margin: 5em 0;
+}
+a.button2 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 0.5em 1.5em;
+    border-bottom: 1px solid #000;
+    text-decoration: none;
+    background: #fb4b4b;
+    color: #fff;
+    text-align: center;
+}
+.back:hover{
+    background-color: limegreen;
+}
+.button2:hover{
+    background-color: limegreen;
+}
+
+/*----------------testsection--------------*/
+.test-grid1,.test-grid3{
+    position: relative;
+    left:1800px;
+    transition: all .8s linear;
+}
+.test-grid2{
+    position: relative;
+    left:-1800px;
+    transition: all .8s linear;
+}
+.test-section {
+    background: #fb4b4b;
+    padding: 4em 0;
+}
+.test1 {
+    position: relative;
+    overflow: hidden;
+}
+.imgone{
+    border-radius:5px;
+}
+.test1 .textbox {
+    width: 452px;
+    height: 380px;
+    position: absolute;
+    top: -2px;
+    left: 16px;
+    margin-top: -380px;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.75);
+    box-shadow: inset 0 0 5px 2px rgba(255,255,255,.75);
+}
+.textbox {
+    transition: all 0.3s linear;
+}
+.textbox p {
+    padding-top: 5em;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.textbox h4 {
+    font-size: 3em;
+    text-align: center;
+    padding-top: 1em;
+    color: #78b907;
+    font-weight: 600;
+}
+.test-right {
+    color: white;
+    margin-top: .4em;
+}
+.test-left01{
+    color: white;
+    margin-top: .4em;
+}
+.test-right h4,.test-left01 h4{
+    font-size: 2.5em;
+}
+.test-right p,.test-left01 p{
+    font-size: 1.2em;
+    padding-top: .5em;
+}
+h4 {
+    display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold;
+}
+.test1:hover .textbox{
+    margin-top: 0;
+}
+/*--------------contact us-----------------*/
+.contact-section{
+    max-width: 100%;
+    height:auto;
+    background-image: url("images/banner2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.contact-section h3{
+    margin-left: 40px;
+    padding-top: 50px;
+    color: white;
+    font-size: 2.8em;
+}
+.contactgrid{
+    position: relative;
+}
+.contactgrid input{
+    position:relative ;
+    top:10px;
+    left:41px;
+    width: 100%;
+    height: 40px;
+    padding-bottom: 0;
+    font-size: 1.7em;
+    color: gainsboro;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+}
+.contactgrid1 textarea{
+    position:relative ;
+    top:50px;
+    left:-70px;
+    background-color: transparent;
+    width: 100%;
+    height: 40px;
+    font-size: 1.5em;
+    color: gainsboro;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+}
+.contactgrid2 input{
+   text-align: right;
+    display: inline-block;
+    margin-left:8em;
+    padding: 20px 30px;
+    font-size: 1.3em;
+    color: #fb4b4b;
+    background-color: transparent;
+    border: 1px solid #fb4b4b;
+}
+.contactgrid2 input:hover{
+    color: gainsboro;
+    border: 1px solid gainsboro;
+}
+#form1{
+    position: relative;
+    left:1800px;
+    transition: all .8s linear;
+}
+/*-----------------------footer----------------------*/
+#footericon{
+    position: relative;
+    left:1800px;
+    transition: all .8s linear;
+}
+.footer-section{
+    padding-top: 30px;
+    background-color: #1f2a36;
+}
+.social-icons{
+    padding: 20px;
+}
+.social-icons i.icon4 {
+    background: url(images/img-sprite.png) no-repeat 0 0;
+}
+.social-icons i.icon5 {
+    background: url(images/img-sprite.png) no-repeat -70px 0;
+}
+.social-icons i.icon6 {
+    background: url(images/img-sprite.png) no-repeat -140px 0;
+}
+.social-icons i {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin: 0 0 0 1em;
+}
+.social-icons i.icon4:hover,.social-icons i.icon5:hover,.social-icons i.icon6:hover{
+    opacity: .6;
+}
+/*---------------小屏幕----------------------------------------------------------------------------*/
+@media screen and (max-width: 768px){
+    .carousel-caption h1{
+        margin-top: 0;
+        font-size: 1.2em;
+    }
+    .carousel-caption h3{
+        margin-top: 0;
+        font-size: .8em;
+    }
+    #navul{
+        width: 30%;
+        padding: 0;
+    }
+    #navul li{
+        width: 100%;
+        text-align: center;
+    }
+    .btn1{
+        background-color: transparent;
+        border: none;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+        height: 3px;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+        border-color: transparent;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+    /*--------------imgbx1-------------------*/
+    .bg{
+        width: 350px;
+        height: 350px;
+        background-color: papayawhip;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    /*-----------------imgbox2--------------*/
+    .imgbox h4{
+        font-size:2em;
+    }
+    .imgbox h5{
+        font-size: .7em;
+    }
+    /*-----------------------backgroud--------------*/
+    .back{
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+    }
+    .icon {
+        width: 60px;
+        height: auto;
+    }
+    .media-heading{
+        font-size: .8em;
+    }
+    .media-body p{
+        font-size: .7em;
+    }
+    .butt{
+        text-align: center;
+        margin: 3em 0;
+    }
+    a.button2 {
+        font-size: 1.1em;
+    }
+    /*----------------testsection--------------*/
+    .test1 .textbox {
+        width: 90%;
+        height: 115px;
+    }
+    .textbox p {
+        padding-top: 2em;
+        font-size: .8em;
+    }
+    .textbox h4 {
+        font-size: 1.2em;
+        padding-top: .1em;
+    }
+    .test-right, .test-left01 {
+        margin-top: .1em;
+    }
+    .test-right h4,.test-left01 h4{
+        font-size: .8em;
+    }
+    .test-right p,.test-left01 p{
+        font-size: .7em;
+        padding-top: .1em;
+    }
+    h4 {
+        -webkit-margin-before: .33em;
+        -webkit-margin-after: .33em;
+    }
+    .contact-section h3{
+        margin-top: 5px;
+        padding-top:10px;
+        font-size: 1.8em;
+    }
+    .contactgrid input{
+        top:0;
+        left:-12px;
+        height: 30px;
+        font-size: 1em;
+    }
+    .contactgrid1 textarea{
+        top:0;
+        left:-10px;
+        height: 30px;
+        padding-bottom: 0;
+        font-size: .8em;
+    }
+    .contactgrid2 input{
+        margin-top: 1.2em;
+        margin-left:.8em;
+        padding: 5px 15px;
+        font-size: .8em;
+    }
+
+}
+/*--------------其他------------------------------------------------------------------*/
+@media screen and (min-width: 768px){
+    /*--------------imgbx1-------------------*/
+    .bg{
+        min-width: 45%;
+        height: 350px;
+        background-color: papayawhip;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    /*-----------------imgbox2--------------*/
+    .imgbox h4{
+        font-size:3em;
+        color: #78b807;
+        margin-top: 20px;
+        margin-left: 38%;
+    }
+    .imgbox h5{
+        font-size: 1.2em;
+        margin-top: -40px;
+        color: white;
+    }
+
+}
+
+
+
+

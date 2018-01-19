@@ -1,0 +1,293 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+.fixed{
+    width: 100%;
+    position: fixed;
+    top:50px;
+    z-index: 10;
+}
+.container-fluid{
+    padding:0;
+    margin:0;
+}
+.navbar-collapse{
+    padding: 0;
+}
+.margin-b{
+    margin-bottom: 0;
+}
+.height100{
+    height: 100%;
+    padding: 0;
+}
+.h1font{
+    font-weight: 200;
+}
+#video{
+    max-width: 100%;
+    height: auto;
+}
+.text-white{
+    color: white;
+}
+section{
+    position: relative;
+}
+.t-position{
+    position: absolute;
+    top: 30%;
+    left:-10% ;
+}
+.imgbox1{
+    margin-top: -10px;
+}
+.conbgbox{
+    width: 100%;
+    height: 220px;
+    position: relative;
+    background-color: #ee593e;
+}
+.conbg{
+    position: absolute;
+    bottom:50px;
+    left: 0;
+}
+.padd{
+    position: absolute;
+    top:70%;
+    z-index: 2;
+    width: 100%;
+    font-size: 2.5em;
+}
+/*导航*/
+.a-fsize{
+    font-size: 2.5em;
+    font-weight: normal;
+}
+.li-style{
+    border-right: 1px gainsboro solid;
+}
+.li-center{
+    height: 80px;
+    padding-top: 20px;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: white;
+    background-color: transparent;
+}
+/*--------------------strap--------------*/
+.btn-style{
+    background-color: #e65e44;
+    border: none;
+    border-radius: 30px;
+    padding: 20px;
+}
+#strap,#shoot,#share{
+    max-height: 450px;
+}
+.strap1,.shoot1,.share1{
+    position:absolute ;
+    top:20%;
+}
+/*----------滚动内容-------------------*/
+.imgicon{
+    min-width: 150px;
+}
+.imgicon img{
+    width: 150px;
+    height: 150px;
+    opacity: .7;
+}
+.imgicon:hover{
+    opacity: 1;
+}
+.text-orange{
+    color: #e65e44;
+}
+.text-grey{
+    color: gainsboro;
+}
+.text-dark{
+    color: gray;
+}
+.h3size{
+    font-size: 2.5em;
+}
+/*----------jumu---------------------*/
+.jumu{
+    background-color: #242424;
+}
+.email{
+    width:50%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+}
+.email input{
+    padding: 30px 20px;
+    border-radius: 40px;
+}
+.email input::placeholder{
+    color: grey;
+    font-size: 1.2em;
+}
+.email a{
+    position: absolute;
+    top:15%;
+    right:2%;
+    margin-right: 5px;
+    padding: 10px 20px;
+    color: white;
+    font-size:1em;
+    background-color: #ee593e;
+    border-radius: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*字体图标*/
+.thumbnail {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding-top:10%;
+    margin: 20px 0;
+    background-color:#303030;
+    border-radius: 150px;
+    border: none;
+}
+.thumbnail img{
+    width: 100%;
+    height: auto;
+}
+.margin-l{
+    margin-left: 100px;
+}
+/*-----------------footer------------------------------------*/
+footer{
+    background-color: #2d2d2d;
+    padding-top: 4%;
+}
+.footer-list {
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 2.25;
+    margin-left: 0;
+    opacity: 0.7;
+}
+.ula a,.ula a:visited,.ula a:focus,.ula a:active,.ula a:hover {
+    text-decoration: none;
+    outline: none;
+    color: gainsboro;
+}
+.frodo-logo-footer {
+    max-height: 30px;
+}
+.fade-half{
+    opacity: 0.5;
+}
+@media screen and (max-width: 768px) {
+    .li-style{
+        border-right:none;
+    }
+    .a-fsize{
+        color: white;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color:#e65e44 ;
+    }
+    .navbar-toggle .icon-bar {
+        width: 16px;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+    .navbar-default .navbar-nav>li>a{
+        color: white;
+    }
+    .bg-orange{
+        background-color: #ee593e;
+    }
+    .navbar-toggle {
+        position: relative;
+        float: right;
+        padding: 9px 10px;
+        margin-top: 8px;
+        margin-right: 15px;
+        margin-bottom: 8px;
+        background-color: transparent;
+        background-image: none;
+        border:none;
+        border-radius: 4px;
+    }
+    #btnclose{
+        float: right;
+        background-color: transparent;
+    }
+    .glyphicon{
+        color: white;
+        font-size: 1.5em;
+        font-weight: 100;
+    }
+    .t-position {
+        position: absolute;
+        top: 10%;
+    }
+    .t-position h1 {
+        font-size: 1.5em;
+    }
+    .t-position h2 {
+        font-size: .8em;
+    }
+    .conbg {
+        width: 50%;
+        height: auto;
+        position: absolute;
+        bottom: 150px;
+        left:59px;
+    }
+    .padd {
+        top: 60%;
+        font-size: 1.5em;
+    }
+    .btn-style {
+        padding: 10px;
+    }
+    #strap, #shoot, #share {
+        max-height: 100%;
+    }
+    .strap1, .shoot1, .share1 {
+        top: 2%;
+    }
+    .margin-l {
+        margin-left: 0;
+    }
+    .text-center-xs {
+        text-align: center !important;
+    }
+}
+/*-----------其他---------------------------------------------------*/
+@media screen and (min-width: 768px){
+    .li-center:hover{
+        background-color: #ee593e;
+    }
+    .ppadding{
+        padding-left: 20%;
+    }
+    .ulcenter{
+        width: 100%;
+        display: inline-block;
+        margin: 0 auto;
+    }
+    .t-position h1{
+        font-size: 3em;
+    }
+    .t-position h2{
+        font-size:1.2em;
+    }
+}

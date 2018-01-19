@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--ie最新版优先-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="all" >
+    <link rel="stylesheet" href="fstyle.css" media="all" >
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--<style>-->
+        <!--body{-->
+            <!--/*overflow-x: hidden;*/-->
+        <!--}-->
+    <!--</style>-->
+</head>
+<body>
+<nav class="navbar navbar-default hidden-xs margin-b" role="navigation" id="navbar1" data-spy="scroll" data-offset="10px">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img src="img/img/logo-black.png" alt="" class="img-responsive">
+            </a>
+        </div>
+        <div class="hidden-xs">
+            <form class="navbar-form navbar-right" role="search">
+                <button type="button" class="btn btn-danger" style="border-radius:35px;border: none;">PRE-ORDER NOW</button>
+            </form>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#" class="text-capitalize">tech specs</a></li>
+                <li><a href="#" class="text-capitalize">blog</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</nav>
+<div class="jumbotron margin-b">
+    <div class="container">
+        <h1 class="text-center h1font">The Most Intelligent Adventure Camera
+            is now on Indiegogo.</h1>
+        <p class="text-center ppadding"><img src="img/img/mobile_banner_frodo.png" alt="" class="img-responsive"></p>
+        <p class="text-center text-uppercase">
+            <a class="btn btn-danger btn-lg" href="#" role="button" style="border: none;border-radius: 20px;font-size: .5em;padding:10px 20px;">
+                watch our Indiegogo video <span class="glyphicon glyphicon-play-circle"></span>
+            </a>
+        </p>
+        <p class="text-center"><span class="glyphicon glyphicon-menu-down"></span></p>
+    </div>
+</div>
+<nav class="navbar navbar-default margin-b" role="navigation"  id="navbar2">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+            data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand visible-xs" href="#">
+                <img src="img/img/logo-black.png" alt="" class="img-responsive">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse bg-orange" id="example-navbar-collapse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav row" style="width: 100%">
+                    <li class="visible-xs text-center">
+                        <button type="button" class="btn" id="btnclose"  data-toggle="collapse"
+                                data-target="#example-navbar-collapse">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                        </button>
+                    </li>
+                    <li class="col-md-4 li-style li-center text-center"><a href="#" class="text-capitalize a-fsize">strap</a></li>
+                    <li class="col-md-4 li-style li-center text-center"><a href="#" class="text-capitalize a-fsize">shoot</a></li>
+                    <li class="col-md-4 li-center text-center"><a href="#" class="text-capitalize a-fsize">share</a></li>
+                    <li class="visible-xs li-center text-center"><a href="#" class="text-capitalize a-fsize">tech specs</a></li>
+                    <li class="visible-xs li-center text-center"><a href="#" class="text-capitalize a-fsize">blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="image-bg vid-bg" id="hero_intro">
+    <div class="background-image-holder fadeIn" style="background: url(&quot;img/img/more_adventure.png&quot;);">
+        <img alt="background-image" class="background-image" src="img/img/more_adventure.png" style="display: none;">
+    </div>
+    <div class="fs-vid-background">
+        <video id="video" poster="img/img/more_adventure.png" muted="muted" loop="loop" autoplay="autoplay">
+            <source src="img/bike.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="container-fluid imgbox1">
+        <div class="row">
+            <div class="conbgbox col-md-12">
+                <img src="img/img/iphone_frodo.png" alt="" class="img-responsive conbg">
+                <p class="text-white text-center padd">It’s as easy as strap, shoot, and share.</p>
+            </div>
+            <div class="col-sm-4 col-sm-offset-8 text-white text-center t-position">
+                <h1 class="frodo-heading text-white">Do more adventure, less editing.<br></h1>
+                <h2 class="frodo-text text-white">With the camera that edits videos for you.</h2>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<section id="strap" class="bg-gray slim">
+    <div class="image-bg">
+        <div class="background-image-holder fadeIn" style="background: url(&quot;img/img/strap_bg.png&quot;);">
+            <img alt="Background" class="img-responsive" src="img/img/strap_bg.png" style="max-width: 100%;">
+        </div>
+        <div class="container strap1">
+            <div class="row row-eq-height vertical-align always-vertical-align slideanim slide">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8">
+                    <h2 class=" frodo-heading text-white">Strap</h2>
+                    <p class="frodo-text text-white">
+                        Revolutionary strap-on design <br>to take on any adventure.
+                    </p>
+                    <a class="btn text-center text-uppercase btn-style text-white" href="#">Explore Strap</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="shoot" class="bg-gray slim">
+    <div class="image-bg">
+        <div class="background-image-holder fadeIn" style="background: url(&quot;img/img/shoot1_bg.png&quot;);">
+            <img alt="Background" class="img-responsive" src="img/img/shoot1_bg.png" style="max-width: 100%;">
+        </div>
+        <div class="container shoot1">
+            <div class="row row-eq-height vertical-align always-vertical-align slideanim">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-1">
+                    <h2 class=" frodo-heading text-white">Shoot</h2>
+                    <p class="frodo-text text-white">
+                        Shoot high-definition videos at <br>just a touch of a button.</p>
+                    <a class="btn text-center text-uppercase btn-style text-white" href="#">Explore Shoot</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="share" class="bg-gray slim" style="overflow: hidden">
+    <div class="image-bg">
+        <div class="background-image-holder fadeIn" style="background: url(&quot;img/img/share1_bg.png&quot;);">
+            <img alt="Background" class="img-responsive" src="img/img/share1_bg.png" style="max-width: 100%;">
+        </div>
+        <div class="container share1">
+            <div class="row row-eq-height vertical-align always-vertical-align slideanim">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8">
+                    <h2 class=" frodo-heading text-white">Share</h2>
+                    <p class="frodo-text text-white">
+                        Auto-edit hours of footage into <br>ready-to-share videos instantly.</p>
+                    <a class="btn text-uppercase text-center text-white btn-style" href="#">Explore Share</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container text-center">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class=" frodo-heading mb40 mb-xs-16" id="new">In the News</h2>
+            <p class="frodo-text">“It saves you the hassle of editing footage in the longer run,<br> courtesy an Evolutionary Algorithm on board.”</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12 centered-pills ">
+        <ul class="nav-pills" data-spy="scroll" style="width: 80%;overflow-x: auto;display: flex;margin: 0 auto;">
+            <li class=" imgicon">
+                <a href="#stuff" data-toggle="pill"><img class="fade-on-hover img-responsive" alt="Stuff" src="img/img/Stuff.jpg"></a>
+            </li>
+            <li class=" imgicon">
+                <a href="#gizmag" data-toggle="pill"><img class="fade-on-hover img-responsive" alt="SmartWatch Future" src="img/img/gizmag.png"></a>
+            </li>
+            <li class=" imgicon">
+                <a href="#nearfox" data-toggle="pill"><img class="fade-on-hover img-responsive" alt="NearFox" src="img/img/nearfox.png"></a>
+            </li>
+            <li class=" imgicon">
+                <a href="#cnetjp" data-toggle="pill"><img class="fade-on-hover img-responsive" alt="ObjetConnecte Net" src="img/img/cnetjp.png"></a>
+            </li>
+            <li class=" imgicon">
+                <a href="#cnt" data-toggle="pill"><img class="fade-on-hover img-responsive" alt="CondeNast Traveller " src="img/img/CondeNastTraveller.png"></a>
+            </li>
+            <li class=" imgicon">
+                <a href="#ndtv" data-toggle="pill"><img class="fade-on-hover img-responsive" alt="NDTV Gadgets 360" src="img/img/gadgets360.png"></a>
+            </li>
+            <li class=" imgicon">
+                <a href="#yourstory" data-toggle="pill"><img class="fade-on-hover img-responsive" alt="YourStory" src="img/img/Yourstory.jpg"></a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<div class="jumbotron jumu margin-b">
+    <div class="container center-block text-orange">
+        <h1 class="text-center">There's a lot happening everyday at Frodo.</h1>
+        <p class="text-center text-white">Stay in the loop for the latest Frodo news and updates.</p>
+        <p>
+            <div class="email">
+                <input type="email" class="form-control" placeholder="Email Address">
+                <a class="btn btn-lg" id="basic-addon1" role="button">sign up</a>
+            </div>
+        </p>
+    </div>
+<!--字体图标-->
+    <div class="row margin-l">
+        <div class="container">
+            <div class="col-xs-2 col-md-1 col-md-offset-3">
+                <a href="#" class="thumbnail text-center">
+                    <img src="img/img/facebook-f.png" alt="..." class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-2 col-md-1">
+                <a href="#" class="thumbnail text-center">
+                    <img src="img/img/twitter.png" alt="..." class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-2 col-md-1">
+                <a href="#" class="thumbnail text-center">
+                    <img src="img/img/Instagram.png" alt="..." class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-2 col-md-1">
+                <a href="#" class="thumbnail text-center">
+                    <img src="img/img/youtube.png" alt="..." class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-2 col-md-1">
+                <a href="#" class="thumbnail text-center">
+                    <img src="img/img/google-fill.png" alt="..." class="img-responsive">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer-2 bg-dark pb16">
+    <div class="container">
+        <!--	<img class="fade-half" style="height:30px;" alt="Frodo" src="img/frodo-logo-white.svg">
+            <hr>-->
+        <div class="row footer-row hidden-xs">
+            <div class="col-xs-3 col-xs-offset-1 col-sm-offset-0 text-center-xs">
+                <a class="footer-head text-orange" href="#">STRAP</a>
+                <div class="clearfix visible-xs hidden mb16"></div>
+                <ul class="footer-list hidden-xs ula">
+                    <li ><a href="#" class="text-grey">Frodo 360&deg;</a> </li>
+                    <li ><a href="#" class="text-grey">World is your tripod</a> </li>
+                    <li ><a href="#" class="text-grey">Modular Design</a> </li>
+                    <li ><a href="#" class="text-grey">Flip-hinged</a> </li>
+                    <li ><a href="#" class="text-grey">Adventure Proof</a> </li>
+                </ul>
+            </div>
+            <div class="col-xs-4 col-sm-3 text-center-xs">
+                <a class="footer-head text-orange" href="#">SHOOT</a>
+                <div class="clearfix visible-xs hidden mb16"></div>
+                <ul class="footer-list hidden-xs">
+                    <li ><a href="#" class="text-grey">Frodo Gallery</a> </li>
+                    <li ><a href="#" class="text-grey">Fastest Shoot</a> </li>
+                    <li ><a href="#" class="text-grey">Dimensions</a> </li>
+                    <li ><a href="#" class="text-grey">Camera</a> </li>
+                    <li ><a href="#" class="text-grey">Battery Life</a> </li>
+                </ul>
+            </div>
+            <div class="col-xs-4 col-sm-3 text-center-xs">
+                <a class="footer-head text-orange" href="#">SHARE</a>
+                <div class="clearfix visible-xs hidden mb16"></div>
+                <ul class="footer-list  hidden-xs">
+                    <li ><a href="#" class="text-grey">Truly Intelligent</a> </li>
+                    <li ><a href="#" class="text-grey">Editing Styles</a> </li>
+                    <li ><a href="#" class="text-grey">Learns Your Style</a> </li>
+                </ul>
+                <!--<a class="footer-head text-orange" href="#faq">FAQ</a>-->
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-3 text-center-xs hidden-xs">
+                <ul class="footer-list opaque">
+                    <li ><a class="footer-head text-orange" href="#">PRESS</a> </li>
+                    <li ><a class="footer-head text-orange" href="http://blog.frodocam.com">BLOG</a> </li>
+                    <li ><a class="footer-head text-orange" href="#">FAQs</a> </li>
+                    <li ><a class="footer-head text-orange" href="#">TECH SPECS</a> </li>
+                    <li ><a class="footer-head text-orange" href="#">PRESS KIT</a> </li>
+                    <li ><a class="footer-head text-orange" href="#">CONTACT US</a> </li>
+
+                </ul>
+                <!--<a class="footer-head text-orange" href="#faq">FAQ</a>-->
+            </div>
+        </div>
+        <div class="row footer-row visible-xs hidden">
+            <div class="col-xs-4 text-center-xs">
+                <a class="footer-head text-orange" href="#">PRESS</a>
+            </div>
+            <div class="col-xs-4 text-center-xs">
+                <a class="footer-head text-orange" href="#">BLOG</a>
+            </div>
+            <div class="col-xs-4 text-center-xs">
+                <a class="footer-head text-orange" href="#">FAQs</a>
+            </div>
+        </div>
+        <div class="row footer-row visible-xs hidden">
+            <div class="col-xs-4 text-center-xs">
+                <a class="footer-head text-orange" href="#">TECH SPECS</a>
+            </div>
+            <div class="col-xs-4 text-center-xs">
+                <a class="footer-head text-orange" href="#">PRESS KIT</a>
+            </div>
+            <div class="col-xs-4 text-center-xs">
+                <a class="footer-head text-orange" href="#">CONTACT US</a>
+            </div>
+        </div>
+        <hr style="margin-bottom:25px;">
+        <div class="row footer-row row-eq-height vertical-align">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-3 text-center-xs mb-xs-16">
+                <img class="frodo-logo-footer fade-half" alt="Frodo" src="img/img/frodo-logo-white.svg">
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-offset-3 col-sm-6 text-right text-center-xs fade-half">
+                <a href="http://www.nexgear.co"><span style="padding:15px 5px;">Product by </span><img alt="Product By Nexgear" class="frodo-logo-footer" src="img/img/nexgear_logo_mark_white.svg"></a>
+            </div>
+        </div>
+        <hr style="margin-top:25px;">
+        <div class="row fine-print text-center-xs">
+            <div class="col-sm-8 text-dark">&copy;Copyright 2016 NexGear Technology Pvt. Ltd.<div class="clearfix hidden visible-xs"></div> All Rights Reserved.</div>
+            <div class="col-sm-4 text-right text-center-xs"><a class="fade-on-hover text-dark" href="#">Read our Privacy Policy</a></div>
+        </div>
+    </div>
+</footer>
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <div>
+                    <iframe width="100%" height="100%" src=""></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    //置顶导航
+    $(document).scroll(function () {
+        var scrolltop = $("body").scrollTop();
+        if(scrolltop>=500){
+            $("#navbar1").addClass("navbar-fixed-top");
+        }else if(scrolltop<500){
+            $("#navbar1").removeClass("navbar-fixed-top");
+        }
+        if(scrolltop>=800){
+            $("#navbar2").addClass("navbar-fixed-top");
+        }else if(scrolltop<800){
+            $("#navbar2").removeClass("navbar-fixed-top");
+        }
+    });
+//$("#btnclose").click(function () {
+//    $("#example-navbar-collapse").collapse('hidden');
+//});
+
+</script>
+</body>
+</html>
